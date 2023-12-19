@@ -39,10 +39,10 @@ Request:
             "name": "user",
             "password": "examplePassword123"
          }
----
 
 Tasks
-     *** Authorization: Basic base64(username:password) ***
+
+*** Authorization: Basic base64(username:password) ***
 
 GET tasks/ - Retrieve a list of all tasks.
 
