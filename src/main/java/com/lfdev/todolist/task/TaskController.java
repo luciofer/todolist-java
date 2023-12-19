@@ -18,7 +18,7 @@ public class TaskController {
     @Autowired
     private ITaskRepository taskRepository;
 
-    @PostMapping("/")
+    @PostMapping("/create")
     public ResponseEntity create(@RequestBody TaskModel taskModel, HttpServletRequest request){
         var idUser = request.getAttribute("idUser");
         taskModel.setIdUser((UUID) idUser);
@@ -44,7 +44,6 @@ public class TaskController {
         return tasks;
     }
 
-    //http://localhost:8080/tasks/1230124-d12d12dqw223rdf-1234124
     @PutMapping("/{id}")
     public ResponseEntity update(@RequestBody TaskModel taskModel, @PathVariable UUID id, HttpServletRequest request){
         var idUser = request.getAttribute("idUser");
