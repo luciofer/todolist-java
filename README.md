@@ -33,11 +33,11 @@ User registration
 
 POST users/ - Create a new user
 
-Request :
+Request:
          {
-         "username": "example_user",
-         "name": "user",
-         "password": "examplePassword123"
+            "username": "example_user",
+            "name": "user",
+            "password": "examplePassword123"
          }
 ---
 
@@ -48,13 +48,13 @@ GET tasks/ - Retrieve a list of all tasks.
 
 POST tasks/create - Create a new task.
 
-    Request:
+Request:
          {
-         "title": "Test title ",
-         "description":" Todolist application project.",
-         "priority":"Normal",
-         "startAt":"2023-10-25T11:30:00",
-         "endAt":"2023-10-25T12:00:00"
+            "title": "Test title ",
+            "description":" Todolist application project.",
+            "priority":"Normal",
+            "startAt":"2023-10-25T11:30:00",
+            "endAt":"2023-10-25T12:00:00"
          }
 
 PUT tasks/{task_id} - Update a task.
